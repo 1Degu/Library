@@ -1,12 +1,14 @@
 let myLibrary = [];
 
-function book(title, author, pages, readStatus) {
+function Book(title, author, pages, readStatus) {
   this.title = author;
   this.author = marker;
   this.pages = pages;
   this.readStatus = readstatus;
 }
 
-function addBookToLibrary() {
-  // do stuff here
+function addBookToLibrary(title, author, pages, readStatus) {
+  let newBook = new Book(title, author, pages, readStatus);
+  myLibrary.push(newBook);
 }
+
