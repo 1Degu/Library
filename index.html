@@ -4,18 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form action="#">
-        <label for="fname">Author:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Title:</label>
-        <input type="text" id="lname" name="lname"><br><br>
-        <label for="fname">Pages:</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="lname">Read:</label>
-        <input type="text" id="lname" name="lname"><br><br>
+    <button id="myBtn" type="button">New book</button>
+
+    <div id="myModal" class="modal">
+
+    
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+    <form id="submitForm">
+        <label for="Author">Author:</label>
+        <input required type="text" id="Author" name="author"><br><br>
+    
+        <label for="Title">Title:</label>
+        <input required  type="text" id="Title" name="title"><br><br>
+    
+        <label for="Pages">Pages:</label>
+        <input required min="0" type="number" id="Pages" name="pages"><br><br>
+    
+        <label for="readStatus">Have you read this book?:</label>
+        <input type="checkbox" id="readStatus" name="read"><br><br>
+    
         <input type="submit" value="Submit">
-      </form>
+
+        
+    </form>
+
+</div>
+
+</div>
+
+<div>
+    <ul id="remigioKnyga">
+       
+    </ul>
+</div>
+
+
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
